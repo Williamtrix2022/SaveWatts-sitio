@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaveWatts · Tu consumo de energía, en semáforo</title>
+  <meta name="description" content="SaveWatts mide cuánta electricidad gasta una casa y la muestra en un semáforo que avisa antes de que llegue la factura.">
+  <meta name="theme-color" content="#F2F3EE">
+  <meta property="og:title" content="SaveWatts · Tu consumo de energía, en semáforo">
+  <meta property="og:description" content="Un equipo en la caja de breakers, una app y un semáforo que te avisa a tiempo.">
+  <meta property="og:image" content="img/logo-full.png">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top">
+    <a class="brand" href="#inicio" aria-label="SaveWatts, ir al inicio">
+      <img src="img/logo-mark.png" alt="" width="40" height="40">
+      <span>SaveWatts</span>
+    </a>
+    <a class="btn btn-small" href="https://savewatts.onrender.com" target="_blank" rel="noopener">Abrir la app<span class="sr"> (se abre en una pestaña nueva)</span></a>
+  </header>
+
+  <nav class="dots" aria-label="Secciones">
+    <ol>
+      <li><a href="#inicio" data-label="Inicio"><span class="sr">Inicio</span></a></li>
+      <li><a href="#problema" data-label="El problema"><span class="sr">El problema</span></a></li>
+      <li><a href="#semaforo" data-label="El semáforo"><span class="sr">El semáforo</span></a></li>
+      <li><a href="#como-funciona" data-label="Cómo funciona"><span class="sr">Cómo funciona</span></a></li>
+      <li><a href="#pruebalo" data-label="Pruébalo"><span class="sr">Pruébalo</span></a></li>
+      <li><a href="#ia" data-label="IA y privacidad"><span class="sr">IA y privacidad</span></a></li>
+      <li><a href="#estado" data-label="Estado y futuro"><span class="sr">Estado y futuro</span></a></li>
+      <li><a href="#demo" data-label="Demo en vivo"><span class="sr">Demo en vivo</span></a></li>
+    </ol>
+  </nav>
+
+  <main id="contenido">
+
+    <!-- 1. Portada -->
+    <section class="slide hero" id="inicio" aria-labelledby="t-inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <img class="hero-logo" src="img/logo-full.png" alt="SaveWatts" width="230" height="152">
+          <h1 id="t-inicio">Tu consumo de energía, <span class="grad">en semáforo</span>.</h1>
+          <p class="lead">Un equipo en la caja de breakers mide cuánta electricidad gasta tu casa y una app te avisa <strong>antes</strong> de pasarte del límite, no cuando llega la factura.</p>
+          <div class="actions">
+            <a class="btn" href="https://savewatts.onrender.com" target="_blank" rel="noopener">Abrir la app<span class="sr"> (se abre en una pestaña nueva)</span></a>
+            <a class="btn btn-ghost" href="#pruebalo">Probar el semáforo</a>
+          </div>
+          <p class="hint" aria-hidden="true">Tip para presentar: usa las teclas <kbd>←</kbd> <kbd>→</kbd> para cambiar de pantalla y <kbd>F</kbd> para pantalla completa.</p>
+        </div>
+        <figure class="phone phone-hero">
+          <img src="img/app-verde.png" alt="Pantalla de la app SaveWatts con el semáforo en verde: 'Vas bien' y el consumo actual en vatios" width="500" height="1000">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Problema -->
+    <section class="slide" id="problema" aria-labelledby="t-problema">
+      <div class="wrap narrow">
+        <p class="eyebrow">El problema</p>
+        <h2 id="t-problema">La factura de luz llega <span class="grad">tarde</span>.</h2>
+        <ul class="cards three">
+          <li>
+            <span class="num" aria-hidden="true">1</span>
+            <h3>Se paga después</h3>
+            <p>Te enteras de cuánto gastaste un mes después, cuando ya no hay nada que hacer.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">2</span>
+            <h3>No se sabe qué gasta</h3>
+            <p>La factura es un solo número. No dice a qué hora ni por qué se disparó el consumo.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">3</span>
+            <h3>Ahorrar es adivinar</h3>
+            <p>Sin datos del momento, apagar luces por costumbre no sirve de mucho.</p>
+          </li>
+        </ul>
+        <p class="statement">SaveWatts convierte el consumo en algo que se ve <strong>mientras ocurre</strong>.</p>
+      </div>
+    </section>
+
+    <!-- 3. Semáforo -->
+    <section class="slide" id="semaforo" aria-labelledby="t-semaforo">
+      <div class="wrap">
+        <p class="eyebrow">La idea</p>
+        <h2 id="t-semaforo">Un semáforo que todos entienden.</h2>
+        <div class="trio">
+          <figure class="state state-green">
+            <div class="phone"><img src="img/app-verde.png" alt="App en verde" width="500" height="1000" loading="lazy"></div>
+            <figcaption><strong>Verde</strong><span>Vas bien: estás lejos de tu límite.</span></figcaption>
+          </figure>
+          <figure class="state state-yellow">
+            <div class="phone"><img src="img/app-amarillo.png" alt="App en amarillo" width="500" height="1000" loading="lazy"></div>
+            <figcaption><strong>Amarillo</strong><span>Te acercas al límite: te damos consejos para prevenir.</span></figcaption>
+          </figure>
+          <figure class="state state-red">
+            <div class="phone"><img src="img/app-rojo.png" alt="App en rojo" width="500" height="1000" loading="lazy"></div>
+            <figcaption><strong>Rojo</strong><span>Pasaste el límite: te decimos qué desconectar primero.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Cómo funciona -->
+    <section class="slide" id="como-funciona" aria-labelledby="t-como">
+      <div class="wrap">
+        <p class="eyebrow">Cómo funciona</p>
+        <h2 id="t-como">De la caja de breakers al celular, en 4 pasos.</h2>
+        <ol class="flow">
+          <li>
+            <span class="num" aria-hidden="true">1</span>
+            <h3>Mide</h3>
+            <p>Un sensor <strong>PZEM-004T</strong> mide voltaje, corriente y potencia en la caja de breakers.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">2</span>
+            <h3>Envía</h3>
+            <p>Un <strong>Arduino UNO R4 WiFi</strong> manda las lecturas por internet cada 5 a 10 segundos, con una clave secreta.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">3</span>
+            <h3>Calcula</h3>
+            <p>El servidor guarda los datos y calcula el color con <strong>reglas fijas</strong>.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">4</span>
+            <h3>Avisa</h3>
+            <p>La app muestra el semáforo, la gráfica y consejos, y se instala en el celular como cualquier app.</p>
+          </li>
+        </ol>
+        <p class="note">El primer paso y el segundo son el hardware. Los pasos 3 y 4 ya están construidos y funcionando en internet.</p>
+      </div>
+    </section>
+
+    <!-- 5. Interactivo -->
+    <section class="slide" id="pruebalo" aria-labelledby="t-pruebalo">
+      <div class="wrap">
+        <p class="eyebrow">Pruébalo tú</p>
+        <h2 id="t-pruebalo">¿Qué color tendría tu casa?</h2>
+        <div class="lab">
+          <div class="lab-controls">
+            <p class="lab-case">Una casa que el mes pasado gastó <strong>300 kWh</strong> y quiere ahorrar <strong>10 %</strong>:</p>
+            <ul class="lab-facts">
+              <li>Límite del mes: <strong>270 kWh</strong></li>
+              <li>Presupuesto de cada día: <strong>9 kWh</strong></li>
+            </ul>
+            <label for="watts" class="lab-label">Potencia que gasta la casa ahora: <output id="watts-out" for="watts">180 W</output></label>
+            <input id="watts" type="range" min="0" max="600" step="5" value="180" aria-describedby="lab-help">
+            <p id="lab-help" class="small">Mueve la barra. Cada casa tiene su límite; este es solo un ejemplo.</p>
+            <div class="presets" role="group" aria-label="Ejemplos rápidos">
+              <button type="button" class="chip chip-green" data-w="180">Verde</button>
+              <button type="button" class="chip chip-yellow" data-w="310">Amarillo</button>
+              <button type="button" class="chip chip-red" data-w="450">Rojo</button>
+            </div>
+          </div>
+          <div class="lab-result" id="lab-result" data-state="green">
+            <div class="light" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+            <div class="lab-text" role="status" aria-live="polite">
+              <h3 id="lab-title">Vas bien</h3>
+              <p id="lab-msg">Estás lejos de tu límite.</p>
+            </div>
+            <div class="lab-math">
+              <p><span>Ritmo diario</span> <strong id="lab-daily">4,3 kWh</strong></p>
+              <p><span>Del presupuesto</span> <strong id="lab-pct">48 %</strong></p>
+              <div class="meter" aria-hidden="true">
+                <div class="meter-bar"><b></b><b></b><b></b></div>
+                <span class="meter-dot" id="lab-dot"></span>
+              </div>
+              <p class="small"><code>potencia × 24 h ÷ presupuesto diario</code>. Verde bajo 70 %, amarillo de 70 a 100 %, rojo sobre 100 %.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. IA y privacidad -->
+    <section class="slide" id="ia" aria-labelledby="t-ia">
+      <div class="wrap">
+        <p class="eyebrow">Confianza</p>
+        <h2 id="t-ia">La IA aconseja. <span class="grad">No decide.</span></h2>
+        <div class="cards two">
+          <article>
+            <h3>El color lo calcula el servidor</h3>
+            <p>Con reglas fijas y matemáticas simples. Si la IA fallara, el semáforo seguiría funcionando igual.</p>
+          </article>
+          <article>
+            <h3>La IA solo redacta consejos</h3>
+            <p>Escribe 2 o 3 recomendaciones para el estado que ya se calculó. Si falla, se muestran consejos base.</p>
+          </article>
+          <article>
+            <h3>Datos personales protegidos</h3>
+            <p>A la IA solo le llegan números, nunca nombre ni correo. Las contraseñas se guardan cifradas.</p>
+          </article>
+          <article>
+            <h3>Tu cuenta es tuya</h3>
+            <p>Puedes cambiar la contraseña, recuperarla por correo o eliminar la cuenta y todo tu consumo guardado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Estado y futuro -->
+    <section class="slide" id="estado" aria-labelledby="t-estado">
+      <div class="wrap">
+        <p class="eyebrow">Dónde estamos</p>
+        <h2 id="t-estado">El software está listo. Falta el equipo físico.</h2>
+        <div class="status-grid">
+          <div class="status-col done">
+            <h3><span class="tag tag-green">Listo</span> Software</h3>
+            <ul>
+              <li>Cuenta, factura y límite personal</li>
+              <li>Semáforo con reglas fijas y modo demostración</li>
+              <li>Panel web instalable en el celular</li>
+              <li>Consejos con IA y lista de electrodomésticos</li>
+              <li>En internet, con HTTPS y probado en un celular real</li>
+            </ul>
+          </div>
+          <div class="status-col next">
+            <h3><span class="tag tag-blue">Siguiente</span> Hardware</h3>
+            <ul>
+              <li>Armar el equipo: sensor PZEM-004T y Arduino UNO R4 WiFi</li>
+              <li>Instalarlo en una caja de breakers real</li>
+              <li>Calibrar las medidas con un medidor de referencia</li>
+              <li>Probar con una familia durante un mes</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">Mientras el equipo se construye, un <strong>simulador</strong> envía lecturas al servidor exactamente como lo hará el hardware. Es lo que verás a continuación.</p>
+      </div>
+    </section>
+
+    <!-- 8. Demo y cierre -->
+    <section class="slide closing" id="demo" aria-labelledby="t-demo">
+      <div class="wrap narrow center">
+        <img class="closing-logo" src="img/logo-full.png" alt="SaveWatts" width="200" height="132" loading="lazy">
+        <h2 id="t-demo">Veámoslo funcionando.</h2>
+        <p class="lead">Abre la app con la cuenta de pruebas. El simulador hará que el semáforo pase de verde a amarillo y a rojo.</p>
+        <p><a class="btn btn-big" href="https://savewatts.onrender.com" target="_blank" rel="noopener">savewatts.onrender.com<span class="sr"> (se abre en una pestaña nueva)</span></a></p>
+        <p class="small">Gracias por su atención.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p>SaveWatts · Proyecto del semillero de ingeniería industrial · El costo mostrado en pesos es siempre una estimación.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
