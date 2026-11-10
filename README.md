@@ -6,6 +6,7 @@
 
 Página web estática (HTML, CSS y JavaScript, sin dependencias) para presentar el proyecto **SaveWatts** en exposiciones y ferias: 8 pantallas, un semáforo interactivo y capturas reales de la app.
 
+- **Sitio publicado:** https://savewatts-sitio.vercel.app
 - **App en internet:** https://savewatts.onrender.com
 - **Código de la app y documentación de entrega:** repositorio `SaveWatts` (carpeta `docs/`)
 
